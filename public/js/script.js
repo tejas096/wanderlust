@@ -17,9 +17,7 @@
 })();
 let listings = document.querySelectorAll(".listing-link");
 let search = document.querySelector("#search");
-if (
-  window.location.href != "https://18r3tfbn-8080.inc1.devtunnels.ms/listings"
-) {
+if (window.location.href != "https://wanderlust-yby2.onrender.com/listings") {
   search.classList.add("display-none");
 } else {
   search.classList.remove("display-none");
@@ -61,9 +59,7 @@ for (let button of buttons) {
 let navbar = document.querySelector(".navbar-toggler");
 navbar.addEventListener("click", (e) => {
   navbar.parentElement.parentElement.classList.toggle("height-increaser");
-  if (
-    window.location.href == "https://18r3tfbn-8080.inc1.devtunnels.ms/listings"
-  ) {
+  if (window.location.href == "https://wanderlust-yby2.onrender.com/listings") {
     search.classList.toggle("display-none");
   }
 });
