@@ -1,0 +1,224 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 1rem;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info {
+  text-align: center;
+  display: flex;
+  height: 8rem;
+  background-color: #ebebed;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-socials i {
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-index:hover {
+  opacity: 0.6;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text {
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none;
+}
+.add-btn,
+.btn-edit {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.show-img {
+  height: 30vh;
+}
+.btns {
+  display: flex;
+}
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+.filters {
+  display: flex;
+}
+.filter {
+  margin-right: 2rem;
+  text-align: center;
+  opacity: 0.6;
+  background-color: white;
+  color: black;
+  border: none;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter i {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 992px) {
+  #search {
+    width: 15rem !important;
+  }
+  .filters {
+    width: 432px !important;
+    overflow-x: scroll !important;
+  }
+  body::-webkit-scrollbar {
+    cursor: pointer;
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #search {
+    width: 15rem !important;
+  }
+  .search-wrap {
+    position: absolute !important;
+    right: 30% !important;
+  }
+  .filters {
+    width: 240px !important;
+    overflow-x: scroll !important;
+  }
+}
+.form-check-label {
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .search-wrap {
+    position: absolute !important;
+    right: 20% !important;
+  }
+  #search {
+    width: 15rem !important;
+  }
+}
+.display-none {
+  display: none;
+}
+.height-increaser {
+  animation: height-inc 0.5s linear 0s 1 normal forwards;
+}
+.height-decreaser {
+  animation: height-inc 0.5s linear 0s 1 reverse forwards;
+}
+@keyframes height-inc {
+  0% {
+    height: 5rem;
+  }
+  100% {
+    height: 14rem;
+  }
+}
+.form-switch {
+  display: inline-block;
+}
+.top-place {
+  display: flex;
+  gap: 5rem;
+}
+.form-switch {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column-reverse !important;
+  padding: 10px !important;
+  width: 10rem !important;
+  gap: 5px !important;
+  border: 2px solid #0000007a !important;
+  border-radius: 10px !important;
+  margin-top: -15px !important;
+  margin-bottom: 12px !important;
+  margin-right: 3rem !important;
+}
+.fa-bars {
+  font-size: 30px;
+}
+.form-check-input {
+  margin-right: 1px !important;
+}
+.set-color-bg-white {
+  background-color: white !important;
+}
+.set-color-white {
+  color: white !important;
+}
+.set-color-black {
+  background-color: black !important;
+}
+.for-border {
+  border: 1px solid white !important;
+}
+.for-border-bottom {
+  border-bottom: 1px solid white !important;
+}
+.for-border-top {
+  border-top: 1px solid white !important;
+}
+.search-wrap {
+  position: absolute;
+  right: 38%;
+}
+#search {
+  border: 2px solid black;
+  width: 26rem;
+  text-align: center;
+  border-radius: 10rem;
+  height: 2.2rem;
+  font-size: 1.2rem;
+}
