@@ -77,11 +77,13 @@ app.use("/listings", listings);
 app.use("/listings/:id/reviews", reviews);
 app.use("/", users);
 
-app.all("*", async (req, res, next) => {
+app.all("/:any", async (req, res, next) => {
   next(new ExpressError(400, "Page Not Found !!"));
 });
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something Went Wrong !!" } = err;
   res.status(statusCode).render("error.ejs", { message });
 });
-app.listen(8080, () => {});
+app.listen(8080, () => {
+  console.log("Done");
+});
