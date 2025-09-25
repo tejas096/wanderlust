@@ -5,6 +5,10 @@ const passport = require("passport");
 const { saveRedirectUrl } = require("../middleware.js");
 const userController = require("../controllers/user.js");
 
+router.route("/").get((req, res) => {
+  res.redirect("/listings");
+});
+
 router
   .route("/signup")
   .get(wrapAsync(userController.signup))
