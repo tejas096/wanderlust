@@ -7,6 +7,8 @@
   "description": "I am currently engaged in a project aimed at emulating the functionalities and design aspects of Airbnb. This undertaking involves meticulous attention to detail in recreating features and user interfaces akin to those found on the Airbnb platform. It's important to note that this is a learning exercise focused on understanding and implementing the technical aspects rather than an attempt to represent Airbnb as an official or endorsed project.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tejas Jain",
